@@ -1,11 +1,18 @@
-hanger
-=====
+crasher
+=======
+
+Module for testing Linux kernel crash tools.
 
 Author: Chris J Arges <christopherarges@gmail.com>
 
-Copyright:  (C) 2014 Canonical Ltd., Chris J Arges <christopherarges@gmail.com>
+Copyright:  (C) 2014,2015 Canonical Ltd., Chris J Arges <christopherarges@gmail.com>
 
 License: GPLv2
+
+modules
+-------
+* hanger - causes soft lockups
+* corrupter - causes memory corruption issues
 
 install
 -------
@@ -13,9 +20,9 @@ install
 2. build it
 	* `$ make`
 3. trigger hang
-	* `$ sudo insmod hanger.ko`
+	* `$ sudo insmod <module>.ko`
 
 uninstall
 ---------
 1. remove module
-	* `$ sudo rmmod hanger`
+	* `$ sudo rmmod <module>`

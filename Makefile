@@ -1,4 +1,4 @@
-obj-m := hanger.o
+obj-m := hanger.o corrupter.o
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 default:
